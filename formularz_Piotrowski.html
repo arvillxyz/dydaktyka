@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pl-PL">
+
 <head>
     <meta charset="UTF-8">
     <title>Formularz Piotrowski</title>
@@ -18,7 +19,7 @@
             background-color: #fff;
             border-radius: 8px;
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-            border: 1px solid #000; 
+            border: 1px solid #000;
         }
 
         h2 {
@@ -32,40 +33,40 @@
             color: #363636;
         }
 
-		input, textarea {
-		width: 100%;
-		padding: 10px;
-		margin-bottom: 16px;
-		box-sizing: border-box;
-		border: 1px solid #ccc;
-		border-radius: 4px;
-		font-size: 16px;
-		transition: box-shadow 0.3s ease; 
+        input,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+            transition: box-shadow 0.3s ease;
         }
-		
-		input:hover,
-		textarea:hover {
-		box-shadow: 0 0 25px rgba(0, 0, 0, 0.16); 
-		}
+
+        input:hover,
+        textarea:hover {
+            box-shadow: 0 0 25px rgba(0, 0, 0, 0.16);
+        }
 
         button {
-		display: block;
-		margin: 0 auto; 
-		background-color: #4caf50;
-		color: #fff;
-		padding: 12px 24px;
-		border: none;
-		border-radius: 4px;
-		cursor: pointer;
-		font-size: 16px;
-		transition: background-color 0.3s ease, transform 0.3s ease;
+            display: block;
+            margin: 0 auto;
+            background-color: #4caf50;
+            color: #fff;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
         }
 
         button:hover {
-		background-color: #45a049;
-		transform: scale(1.05);
+            background-color: #45a049;
+            transform: scale(1.05);
         }
-		
 
         span.wymaganaodp {
             color: red;
@@ -73,20 +74,20 @@
         }
 
         span.dekoracja {
-            text-decoration: none; 
-            border-bottom: 3px solid gold;  
+            text-decoration: none;
+            border-bottom: 3px solid gold;
         }
 
-		a {
-		text-decoration: none;
-		border-bottom: 3px solid gold;
-		color: black;
-		transition: border-bottom 0.3s ease; 
+        a {
+            text-decoration: none;
+            border-bottom: 3px solid gold;
+            color: black;
+            transition: border-bottom 0.3s ease;
         }
-		
-		a:hover {
-		border-bottom: 3px solid #F9A825;
-		}
+
+        a:hover {
+            border-bottom: 3px solid #F9A825;
+        }
 
         legend {
             font-weight: bold;
@@ -100,13 +101,13 @@
         }
 
         .formularzpodkr {
-            text-decoration: underline; 
+            text-decoration: underline;
             color: black;
             font-size: 24px;
         }
 
         .myslniki {
-            color: #fbb710; 
+            color: #fbb710;
         }
 
         .copyright {
@@ -115,39 +116,39 @@
             padding: 10px;
             color: black;
         }
-		
     </style>
 </head>
+
 <body>
-	
-<form action="formularzpodziekowanie_Piotrowski.html" method="post">
     <div class="naglowek">
         <h2><span class="myslniki"> - </span>Wypełnij <span class="formularzpodkr">formularz</span> kontaktowy<span class="myslniki"> - </span></h2>
-        <label for="name">Imię i nazwisko<span class="wymaganaodp">*</span>:</label>
-        <input type="text" id="name" name="name" required>
+        <form action="formularzpodziekowanie_Piotrowski.html" method="post">
+            <label for="name">Imię i nazwisko<span class="wymaganaodp">*</span>:</label>
+            <input type="text" id="name" name="name" required>
 
-        <label for="email">Adres e-mail<span class="wymaganaodp">*</span>:</label>
-        <span class="przykladmail">np. JanKowalski@poczta.pl</span>
-        <input type="email" id="email" name="email" required>
+            <label for="email">Adres e-mail<span class="wymaganaodp">*</span>:</label>
+            <span class="przykladmail">np. JanKowalski@poczta.pl</span>
+            <input type="email" id="email" name="email" required>
 
-        <label for="phone">Numer telefonu (opcjonalnie):</label>
-        <input type="tel" id="phone" name="phone">
+            <label for="phone">Numer telefonu (opcjonalnie):</label>
+            <input type="tel" id="phone" name="phone">
 
-        <label for="message">Wiadomość<span class="wymaganaodp">*</span>:</label>
-        <textarea id="message" name="message" rows="4" required></textarea>
-        <button type="submit" formaction="formularzpodziekowanie_Piotrowski.html">Prześlij wiadomość</button>
-    </form>
-</div>
-<center> <a href="index.html">Wróć do strony głównej</a> </center>
-<legend>Legenda:</legend>
-<span>opcjonalnie - <i>(optional)</i></span>
-<br>
-<span class="wymaganaodp">*</span> <span> <i>- wymagane (required)</i></span>
-<br>
-<span>np. - <i> na przykład, przykładowo (for example)</i></span>
+            <label for="message">Wiadomość<span class="wymaganaodp">*</span>:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <button type="submit">Prześlij wiadomość</button>
+        </form>
+    </div>
+    <center> <a href="index.html">Wróć do strony głównej</a> </center>
+    <legend>Legenda:</legend>
+    <span>opcjonalnie - <i>(optional)</i></span>
+    <br>
+    <span class="wymaganaodp">*</span> <span> <i>- wymagane (required)</i></span>
+    <br>
+    <span>np. - <i> na przykład, przykładowo (for example)</i></span>
 
-<div class="copyright">
-    &copy; Piotrowski
-</div>
+    <div class="copyright">
+        &copy; Piotrowski
+    </div>
 </body>
+
 </html>
